@@ -1,50 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment3</title>
-    <!-- DaisyUI Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/d121e1d356.js" crossorigin="anonymous"></script>
-    <!-- Script custom Tailwind -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment3</title>
+  <!-- DaisyUI Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/d121e1d356.js" crossorigin="anonymous"></script>
+  <!-- Script custom Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            bgprimary: '#ABEF5F',
+            title1: '#494949',
+            // title1: '#ABEF5F',
           }
         }
-      </script>
-    <style>
-        .manrope {
-            font-family: "Manrope", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    .manrope {
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
 </head>
 
 <body class="manrope">
-    <header>
-        <!-- Navbar -->
-        <!-- Banner hero section -->
-    </header>
-    <!-- Main -->
-    <main></main>
-    <!-- Footer -->
-    <footer></footer>
+  <header class="bg-gradient-to-t from-[#ffffff] to-[#ffffff00] md:container  mx-auto">
+    <!-- Navbar -->
+    <!-- <nav> -->
+    <div class="navbar bg-base-100">
+      <div class=" flex-grow">
+        <!-- Brand Name -->
+        <button class="bg-bgprimary btn-circle"> <i class="fa-solid fa-arrow-right fa-rotate-by fa-2xl"
+            style="color: #1c1c1c; --fa-rotate-angle: -45deg;"></i></button>
+        <a class="btn btn-ghost text-title1 font-extrabold text-3xl">Rinterio</a>
+      </div>
+      <div class="navbar-center hidden lg:flex flex-grow">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="font-extrabold">Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end justify-center space-x-2 flex-grow">
+        <div class="hidden md:flex gap-2">
+          <button class="bg-white btn-circle rounded-full border"> <i class="fa-solid fa-magnifying-glass fa-xl"
+              style="color: #737373;"></i></button>
+          <button class="bg-white btn-circle rounded-full border p-2"> <i class="fa-solid fa-cart-shopping fa-xl"
+              style="color: #737373;"></i></button>
+
+        </div>
+        <div class="hidden md:flex gap-2 items-center bg-bgprimary rounded-full px-5 py-3">
+          <button type="button" class="text-title1 font-extrabold text-2xl">Book Consult</button>
+          <button class="bg-black btn-circle w-8 h-8 rounded-full"> <i
+              class="fa-solid fa-arrow-right fa-rotate-by fa-xl"
+              style="color: #ffffff; --fa-rotate-angle: -45deg;"></i></button>
+        </div>
+
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <button class="bg-white btn-circle border"> <i class="fa-solid fa-bars fa-xl"
+                style="color: #737373;"></i></button>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a class="font-extrabold">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Banner hero section -->
+    <div class="hero mt-12 mb-24">
+      <div class="hero-content flex flex-col">
+        <img src="Assets/banner (1).png" class="max-w-sm rounded-lg shadow-2xl" />
+        <div class="text-center  w-3/4">
+          <h1 class="text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+          <p class="py-6">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood, sleek metal accents, and large windows that flood the space with natural light.
+          </p>
+          <button class="btn bg-bgprimary rounded-full font-bold bg-opacity-50 border-bgprimary">View Details
+            <p class="bg-bgprimary btn-circle flex justify-center items-center"> <i class="fa-solid fa-arrow-right fa-rotate-by fa-2xl"
+              style="color: #1c1c1c; --fa-rotate-angle: -45deg;"></i></p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main></main>
+  <!-- Footer -->
+  <footer></footer>
 
 </body>
 
