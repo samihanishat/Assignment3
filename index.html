@@ -43,54 +43,60 @@
   </style>
 </head>
 
-<body class="manrope w-full mx-auto">
-  <header class="bg-gradient-to-t from-[#ffffff] to-[#ffffff00] container  mx-auto">
-    <!-- Navbar -->
-    <!-- <nav> -->
-    <div class="navbar bg-base-100">
-      <div class=" flex-grow">
-        <!-- Brand Name -->
-        <button class="bg-bgprimary btn-circle"> <i class="fa-solid fa-arrow-right fa-rotate-by fa-2xl"
-            style="color: #1c1c1c; --fa-rotate-angle: -45deg;"></i></button>
-        <a class="btn btn-ghost text-title1 font-extrabold text-3xl">Rinterio</a>
+<body class="manrope">
+  <header class="bg-gradient-to-t from-[#ffffff] to-[#ffffff00]">
+    <!-- Nav bar -->
+    <div class="navbar flex justify-between md:container md:px-10 py-5 mx-auto">
+      <div class="navbar-start">
+        <a class="btn btn-ghost text-4xl font-extrabold hover:bg-transparent hover:opacity-70">
+          <button class="bg-bgprimary btn-circle"> <i class="fa-solid fa-arrow-right fa-rotate-by"
+              style="color: #1c1c1c; --fa-rotate-angle: -45deg;"></i></button>
+          Rinterio
+        </a>
       </div>
-      <div class="navbar-center hidden lg:flex flex-grow">
+      <!-- navbar center -->
+      <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          <li><a class="font-extrabold">Home</a></li>
+          <li class="font-bold"><a>Home</a></li>
           <li><a>Services</a></li>
           <li><a>Portfolio</a></li>
           <li><a>Blogs</a></li>
           <li><a>Contact Us</a></li>
         </ul>
       </div>
-      <div class="navbar-end justify-end md:justify-center space-x-2 flex-grow">
-        <div class="hidden md:flex gap-2">
-          <button class="bg-white btn-circle rounded-full border"> <i class="fa-solid fa-magnifying-glass fa-xl"
-              style="color: #737373;"></i></button>
-          <button class="bg-white btn-circle rounded-full border p-2"> <i class="fa-solid fa-cart-shopping fa-xl"
-              style="color: #737373;"></i></button>
+      <!-- navbar end -->
+      <div class="navbar-end hidden lg:flex gap-5">
+        <i class="bg-white p-3 rounded-full hover:bg-transparent fa-solid fa-magnifying-glass"></i>
+        <i class="bg-white p-3 rounded-full hover:bg-transparent fa-solid fa-cart-shopping"></i>
 
-        </div>
-        <div class="hidden md:flex gap-2 items-center bg-bgprimary rounded-full px-5 py-3">
-          <button type="button" class="text-button font-extrabold text-2xl">Book Consult</button>
-          <button class="bg-black btn-circle w-8 h-8 rounded-full"> <i
-              class="fa-solid fa-arrow-right fa-rotate-by fa-xl"
+        <a class="btn bg-bgprimary rounded-full  font-extrabold">Book Consult <button
+            class="bg-black btn-circle w-8 h-8 rounded-full"> <i class="fa-solid fa-arrow-right fa-rotate-by fa-xl"
               style="color: #ffffff; --fa-rotate-angle: -45deg;"></i></button>
-        </div>
+        </a>
+      </div>
+      <!-- dropdown button for -->
 
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <button class="bg-white btn-circle border"> <i class="fa-solid fa-bars fa-xl"
-                style="color: #737373;"></i></button>
-          </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a class="font-extrabold">Home</a></li>
-            <li><a>Services</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact Us</a></li>
-          </ul>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost m-1 lg:hidden">
+          <i class="fa-solid fa-bars"></i>
         </div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow font-medium">
+          <li class="font-bold"><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+          <li class="flex flex-row">
+            <i class="bg-white p-3 rounded-full hover:bg-[#f7f7f7] fa-solid fa-magnifying-glass"></i>
+            <i class="bg-white p-3 rounded-full hover:bg-[#f7f7f7] fa-solid fa-cart-shopping"></i>
+          </li>
+          <li>
+            <a class="btn bg-bgprimary rounded-full  font-extrabold">Book Consult <button
+                class="bg-black btn-circle w-8 h-8 rounded-full"> <i class="fa-solid fa-arrow-right fa-rotate-by fa-xl"
+                  style="color: #ffffff; --fa-rotate-angle: -45deg;"></i></button>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <!-- Banner hero section -->
@@ -289,50 +295,29 @@
     <section class="flex flex-col md:flex-row items-center justify-center gap-10 my-20">
       <div>
         <h1 class="text-4xl font-bold"> <span class="text-5xl text-green-600">Choose</span> <br>
-           Your Dream, <br> Your Home. <br> Find Your <br> <span class="text-5xl text-green-600">Uniqueness</span>  </h1>
+          Your Dream, <br> Your Home. <br> Find Your <br> <span class="text-5xl text-green-600">Uniqueness</span> </h1>
       </div>
       <div class="carousel rounded-box w-64">
         <div class="carousel-item w-full">
-          <img
-            src="Assets/article1.png"
-            class="w-full"
-            alt="Tailwind CSS Carousel component" />
+          <img src="Assets/article1.png" class="w-full" alt="Tailwind CSS Carousel component" />
         </div>
         <div class="carousel-item w-full">
-          <img
-            src="Assets/article2.png"
-            class="w-full"
-            alt="Tailwind CSS Carousel component" />
+          <img src="Assets/article2.png" class="w-full" alt="Tailwind CSS Carousel component" />
         </div>
         <div class="carousel-item w-full">
-          <img
-            src="Assets/article3.png"
-            class="w-full"
-            alt="Tailwind CSS Carousel component" />
+          <img src="Assets/article3.png" class="w-full" alt="Tailwind CSS Carousel component" />
         </div>
         <div class="carousel-item w-full">
-          <img
-            src="Assets/img1.png"
-            class="w-full"
-            alt="Tailwind CSS Carousel component" />
+          <img src="Assets/img1.png" class="w-full" alt="Tailwind CSS Carousel component" />
         </div>
         <div class="carousel-item w-full">
-          <img
-            src="Assets/img3.png"
-            class="w-full"
-            alt="Tailwind CSS Carousel component" />
+          <img src="Assets/img3.png" class="w-full" alt="Tailwind CSS Carousel component" />
         </div>
         <div class="carousel-item w-full">
-          <img
-            src="Assets/img4.png"
-            class="w-full"
-            alt="Tailwind CSS Carousel component" />
+          <img src="Assets/img4.png" class="w-full" alt="Tailwind CSS Carousel component" />
         </div>
         <div class="carousel-item w-full">
-          <img
-            src="Assets/img5.png"
-            class="w-full"
-            alt="Tailwind CSS Carousel component" />
+          <img src="Assets/img5.png" class="w-full" alt="Tailwind CSS Carousel component" />
         </div>
       </div>
     </section>
@@ -390,7 +375,8 @@
             style="color: #1c1c1c; --fa-rotate-angle: -45deg;"></i></button>
         <a class="btn btn-ghost text-white font-extrabold text-3xl">Rinterio</a>
       </div>
-      <p class="md:w-2/3 text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+      <p class="md:w-2/3 text-[#737373]">The barn house captivates with its blend of rustic charm and modern
+        sophistication, featuring weathered wood,
         sleek metal accents.</p>
     </aside>
 
@@ -406,13 +392,12 @@
       </div>
     </nav>
 
-      <div class="flex gap-2 items-center bg-bgprimary rounded-full px-5 py-3">
-        <button type="button" class="text-button font-extrabold text-2xl">Book Consult</button>
-        <button class="bg-black btn-circle w-8 h-8 rounded-full"> <i
-            class="fa-solid fa-arrow-right fa-rotate-by fa-xl"
-            style="color: #ffffff; --fa-rotate-angle: -45deg;"></i></button>
-      </div>
-    
+    <div class="flex gap-2 items-center bg-bgprimary rounded-full px-5 py-3">
+      <button type="button" class="text-button font-extrabold text-2xl">Book Consult</button>
+      <button class="bg-black btn-circle w-8 h-8 rounded-full"> <i class="fa-solid fa-arrow-right fa-rotate-by fa-xl"
+          style="color: #ffffff; --fa-rotate-angle: -45deg;"></i></button>
+    </div>
+
   </footer>
 
 </body>
